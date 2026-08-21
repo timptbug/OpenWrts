@@ -52,7 +52,7 @@ permissions:
 jobs:
   resolve:
     name: ${{ inputs.repo == 'lede' && 'LEDE' || inputs.repo == 'immortalwrt' && 'ImmortalWrt' || 'Auto Source' }}
-    runs-on: self-hosted, Linux, X64
+    runs-on: HOME-E5
     outputs:
       repo: ${{ steps.matrix.outputs.repo }}
       matrix: ${{ steps.matrix.outputs.matrix }}
